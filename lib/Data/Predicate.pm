@@ -1,8 +1,9 @@
 package Data::Predicate;
 
-our $VERSION = '2.0.0';
 use strict;
 use warnings;
+
+our $VERSION = '2.0.1';
 use Carp;
 
 sub new {
@@ -127,6 +128,11 @@ to external users and the dependencies it introduces. It saddens me to remove
 it but in the long run I think it is the right decision.
 
 =head1 METHODS
+
+=head2 new()
+
+Basic new method which does blessing of the current variable. Override & extend
+to bring your own slant to a predicate if required.
 
 =head2 apply()
 
